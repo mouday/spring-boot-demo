@@ -162,6 +162,9 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
 }
 
 ```
+
+完整代码： [https://github.com/mouday/Spring-Boot-Demo/tree/master/demo-jwt](https://github.com/mouday/Spring-Boot-Demo/tree/master/demo-jwt)
+
 >参考文章
 >1. [SpringBoot集成JWT实现token验证](https://www.jianshu.com/p/e88d3f8151db)
 >2. [SpringBoot2.0 - 集成JWT实现token验证](https://blog.csdn.net/milogenius/article/details/96425694)
