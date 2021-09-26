@@ -8,3 +8,8 @@
 | [demo-jwt](demo-jwt)                                                 | SpringBoot 集成 JWT                      |
 | [demo-filter-interceptor-listener](demo-filter-interceptor-listener) | SpringBoot 拦截器、过滤器、监听器        |
 | [Spring-Boot-Freemarker](Spring-Boot-Freemarker) | SpringBoot整合模板引擎Freemarker        |
+
+
+可参考的项目
+
+- Spring 系列教程： https://github.com/wuyouzhuguli/SpringAll
