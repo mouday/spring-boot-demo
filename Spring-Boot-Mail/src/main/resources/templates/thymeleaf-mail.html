@@ -1,3 +1,6 @@
-<div>
-    Hi, My name is ${name}, I'm ${age} years old.
-</div>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <div>
+        Hi, My name is <span th:text="${name}"></span>,
+        I'm <span th:text="${age}"></span> years old.
+    </div>
+</html>

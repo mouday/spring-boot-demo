@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.Map;
 
 @Service
-public class TemplateService {
+public class FreeMarkerService {
     //发送邮件的模板引擎
     @Autowired
     private FreeMarkerConfigurer configurer;

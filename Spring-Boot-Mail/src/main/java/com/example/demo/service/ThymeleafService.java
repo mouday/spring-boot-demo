@@ -1,23 +1,24 @@
 package com.example.demo.service;
 
-import freemarker.template.Template;
-import freemarker.template.TemplateException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
-import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
+import org.thymeleaf.TemplateEngine;
+import org.thymeleaf.context.Context;
 
-import java.io.IOException;
 import java.util.Map;
 
 @Service
-public class FreeMarkerService {
-    //发送邮件的模板引擎
+public class ThymeleafService {
     @Autowired
-    private FreeMarkerConfigurer configurer;
+    TemplateEngine templateEngine;
 
-    public String renderTemplate(String templateName, Map<String, Object> model) throws IOException, TemplateException {
-        Template template = configurer.getConfiguration().getTemplate(templateName);
-        return FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
+    public String renderTemplate(String templateName, Map<String, Object> model){
+        Context content = new Context();
+
+        for (String key : model.keySet()) {
+            content.setVariable(key, model.get(key));
+        }
+
+        return templateEngine.process(templateName, content);
     }
 }
