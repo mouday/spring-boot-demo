@@ -9,6 +9,11 @@
 
 <body>
     Hello ${name}
+
+    <#if user == "Big Joe">, our beloved leader
+
+    </#if>
+
 </body>
 
 </html>
