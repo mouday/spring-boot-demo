@@ -8,12 +8,25 @@
 </head>
 
 <body>
-    Hello ${name}
+<#-- 注释 取出变量 -->
+Hello ${name}
 
-    <#if user == "Big Joe">, our beloved leader
+<#-- if判断-->
+<#if name == "Tom">
+    <span>is Tom</span>
+<#elseif name == "Jack">
+    <span>is Jack</span>
+<#else>
+    <span>not is Tom</span>
+</#if>
 
-    </#if>
+<#--for循环-->
+<#list list as item>
+    <p>${item.name} ${item.age}</p>
+</#list>
 
+<#-- 引入模板 -->
+<#include "./footer.html">
 </body>
 
 </html>
