@@ -34,4 +34,5 @@ npm run dev
 
 ## 鸣谢
 
-Logo生成：https://www.logoly.pro/
+- Logo：https://www.logoly.pro/
+- docsify：https://docsify.js.org/
