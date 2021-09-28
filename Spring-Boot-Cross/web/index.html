@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <title>Demo</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+</head>
+
+<body>
+    <script>
+        // get
+        axios.get("http://localhost:8080/json", {
+                params: {
+                    name: 'Tom'
+                }
+            })
+            .then(res => {
+                console.log(res);
+            })
+
+        // post
+        axios.post("http://localhost:8080/json", {
+                name: 'Tom'
+            })
+            .then(res => {
+                console.log(res);
+            })
+
+        // 携带自定义头部
+        axios.post("http://localhost:8080/json", {
+            name: 'Tom'
+        }, {
+            headers: {
+                'X-Token': 'token'
+            }
+        }).then(res => {
+            console.log(res);
+        })
+    </script>
+</body>
+
+</html>
