@@ -1,8 +1,7 @@
 # SpringBoot Demo
 
-项目地址：
-
-[https://github.com/mouday/Spring-Boot-Demo](https://github.com/mouday/Spring-Boot-Demo)
+- 文档地址：[https://mouday.github.io/Spring-Boot-Demo](https://mouday.github.io/Spring-Boot-Demo)
+- 项目地址：[https://github.com/mouday/Spring-Boot-Demo](https://github.com/mouday/Spring-Boot-Demo)
 
 一些和 SpringBoot 相关的 Demo
 
