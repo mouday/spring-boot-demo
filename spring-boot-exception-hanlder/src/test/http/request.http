@@ -1,0 +1,56 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://localhost:8080/api/index
+Accept: application/json
+
+# Hello Spring Boot
+
+###
+
+GET http://localhost:8080/api/runtimeException
+Accept: application/json
+
+# {
+#   "msg": "服务端运行时异常",
+#   "code": -1,
+#   "data": null
+# }
+
+###
+
+GET http://localhost:8080/api/appException
+Accept: application/json
+
+# {
+#   "msg": "服务端业务异常",
+#   "code": -1,
+#   "data": null
+# }
+
+
+###
+GET http://localhost:8080/api/notFound
+Accept: application/json
+
+# {
+#   "timestamp": "2022-12-03T13:26:48.265+00:00",
+#   "status": 404,
+#   "error": "Not Found",
+#   "path": "/api/notFound"
+# }
+
+###
+
+GET http://localhost:8080/api/notFound
+
+#{
+#  "msg": "Not Found",
+#  "code": -1,
+#  "data": null
+#}
+###
