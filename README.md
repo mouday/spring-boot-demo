@@ -22,6 +22,9 @@
 | [spring-boot-error-contorller](spring-boot-error-contorller)                                   | Spring-Boot ErrorContorller   错误处理控制器 |
 | [spring-boot-exception-hanlder](spring-boot-exception-hanlder)                                   | Spring-Boot ExceptionHanlder   统一异常处理 |
 | [Spring-Boot-MyBaits-PageHelper](Spring-Boot-MyBaits-PageHelper)                                   | Spring-Boot 分页实现 |
+| [Spring-Boot-MyBatis-JPA](Spring-Boot-MyBatis-JPA)                                   | Spring-Boot JPA |
+
+| [SpringBoot-ElasticSearch](SpringBoot-ElasticSearch)                                   | SpringBoot ElasticSearch |
 
 
 可参考的项目：
