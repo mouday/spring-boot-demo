@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.EmployeeMapper">
+
+    <select id="getById" resultType="com.example.demo.pojo.Employee">
+    select * from employee where id = #{id}
+  </select>
+
+
+    <insert id="insert">
+        insert into employee (name, age, sex, birth, department_id)
+        values (#{name}, #{age}, #{sex}, #{birth}, #{department_id})
+    </insert>
+
+    <delete id="deleteById">
+        delete from employee where id = #{id}
+    </delete>
+
+</mapper>

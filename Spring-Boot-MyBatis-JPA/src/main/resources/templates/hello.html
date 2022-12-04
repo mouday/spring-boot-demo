@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hello</h1>
+
+<!--文本输出-->
+<div th:text="${name}"></div>
+
+<!--循环遍历-->
+<div th:each="pet: ${pets}">
+    <div>[[${pet}]]</div>
+</div>
+
+<!--循环遍历-->
+<div th:each="pet: ${pets}" th:text="pet"></div>
+
+</body>
+</html>

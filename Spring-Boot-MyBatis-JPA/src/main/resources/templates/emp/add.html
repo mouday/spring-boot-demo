@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Dashboard Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="/static/css/dashboard.css" rel="stylesheet">
+</head>
+<body>
+
+<!--引入导航-->
+<div th:insert="~{commons/navbar::nav}"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <!--引入侧边栏-->
+        <div th:replace="commons/sidebar::#sidebarMenu(activeUri='emps')"></div>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+
+
+            <h2 th:text="${emp!=null}?'修改员工信息'">添加员工</h2>
+
+            <div style="height: 10px;"></div>
+
+            <form th:action="@{/emp}" method="post">
+
+                <input type="hidden" name="_method" value="put" th:if="${emp!=null}">
+                <input type="hidden" name="id"  th:if="${emp!=null}" th:value="${emp.id}">
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input name="name" type="text" class="form-control" id="exampleInputEmail1" placeholder="Name" th:value="${emp!=null}?${emp.name}">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Age</label>
+                    <input name="age" type="number" class="form-control" id="exampleInputPassword1" placeholder="Age" th:value="${emp}!=null?${emp.age}:''">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-birth">Birth</label>
+                    <input name="birth" type="date" class="form-control" id="input-birth" placeholder="Birth" th:value="${emp}!=null?${emp.birth}:''">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Sex</label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="sex" id="inlineRadio1" value="0" th:checked="${emp}!=null? ${emp.sex} == '0':false">女
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="sex" id="inlineRadio2" value="1" th:checked="${emp}!=null? ${emp.sex} == '1':false">男
+                    </label>
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Dept</label>
+                    <select class="form-control" name="department.id">
+                        <option th:value="${dept.id}" th:each="dept: ${depts}" th:text="${dept.name}">1</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary" th:text="${emp!=null}?'修改':'提交'">提交</button>
+            </form>
+
+        </main>
+    </div>
+</div>
+<script src="/static/js/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<!--<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>-->
+<script src="/static/js/bootstrap.bundle.js"></script>
+<script src="/static/js/feather.min.js"></script>
+<script src="/static/js/dashboard.js"></script>
+</body>
+</html>

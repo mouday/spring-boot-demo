@@ -1,0 +1,82 @@
+PUT http://localhost:9200/data/employee/1
+content-type: application/json
+
+{
+  "name": "Tom Steve",
+  "age": 24
+}
+
+###
+
+POST http://localhost:9200/data/employee/2
+content-type: application/json
+
+{
+  "name": "Jack",
+  "age": 24
+}
+
+###
+
+POST http://localhost:9200/data/employee/3
+content-type: application/json
+
+{
+  "name": "Tom Steve",
+  "age": 24
+}
+
+###
+
+POST http://localhost:9200/data/employee/_search
+content-type: application/json
+
+{
+  "query": {
+    "match_phrase": {
+      "name": "Tom Steve"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "name": {}
+    }
+  }
+}
+
+
+###
+
+POST http://localhost:9200/data/employee/_search
+content-type: application/json
+
+{
+  "query": {
+    "bool": {
+      "must": {
+        "match": {
+          "name": "Tom"
+        }
+      },
+      "filter": {
+        "range": {
+          "age": {
+            "gt": 20
+          }
+        }
+      }
+    }
+  }
+}
+#检查存在
+DELETE http: //localhost:9200/data/employee/3
+
+#返回状态码
+#存在：200
+#不存在：404
+
+###
+
+POST http://localhost:9200/data/employee/_search
+
+###

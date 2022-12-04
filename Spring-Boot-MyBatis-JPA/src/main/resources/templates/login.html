@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Jekyll v4.0.1" />
+    <title th:text="#{login.title}"></title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.5/examples/floating-labels/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="/static/css/floating-labels.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <form class="form-signin" action="/user/login" method="post">
+      <div class="text-center mb-4">
+        <img
+          class="mb-4"
+          src="/static/brand/bootstrap-solid.svg"
+          alt=""
+          width="72"
+          height="72"
+        />
+        <h1 class="h3 mb-3 font-weight-normal" th:text="#{login.title}"></h1>
+
+         <!--登录错误消息提示-->
+        <p style="color: red;" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+
+      </div>
+
+      <div class="form-label-group">
+        <input
+          type="text"
+          name="username"
+          id="inputEmail"
+          class="form-control"
+          th:placeholder="#{login.username}"
+          required
+          autofocus
+        />
+        <label for="inputEmail"  th:text="#{login.username}"></label>
+      </div>
+
+      <div class="form-label-group">
+        <input
+          type="password"
+          name="password"
+          id="inputPassword"
+          class="form-control"
+          th:placeholder="#{login.password}"
+          required
+        />
+        <label for="inputPassword" th:text="#{login.password}"></label>
+      </div>
+
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"/> [[#{login.remember}]]
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" th:text="#{login.button}">
+
+      </button>
+      <p class="mt-5 mb-3 text-muted text-center">
+        <a th:href="@{/(lang='zh_CN')}">中文</a> |
+        <a th:href="@{/(lang='en_US')}">English</a>
+      </p>
+      <p class="mt-5 mb-3 text-muted text-center">&copy; 2020</p>
+    </form>
+  </body>
+</html>

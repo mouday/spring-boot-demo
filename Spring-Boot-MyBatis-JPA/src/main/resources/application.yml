@@ -1,0 +1,69 @@
+spring:
+  thymeleaf:
+    # 禁用缓存
+    cache: false
+
+  devtools:
+    restart:
+      enabled: true
+
+  # 设置国际化
+  messages:
+    basename: i18n.login
+
+  mvc:
+    # 设置静态资源目录 默认: /**
+    static-path-pattern: /static/**
+
+    # 设置日期格式化
+    format:
+      date: yyyy-MM-dd
+
+    # HiddenHttpMethodFilter
+    hiddenmethod:
+      filter:
+        enabled: true
+
+  # 配置数据源
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/data
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    # 始终执行初始化
+    initialization-mode: ALWAYS
+    # 指定自动建表sql
+    schema:
+      - classpath:sql/schema-all.sql
+
+    # 自定义数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    # 统计sql
+    filters: stat,wall
+
+  jpa:
+    hibernate:
+      # 更新或创建表结构
+      ddl-auto: update
+    # 控制台打印sql
+    show-sql: true
+
+  # 163邮箱发送邮件
+  mail:
+    host: smtp.163.com
+    port: 25
+    username: moudayemail@163.com
+    password: mouday123
+
+#  redis:
+#    host: 127.0.0.1
+
+mybatis:
+
+  # 指定全局配置文件路径
+  config-location: classpath:mybatis/mybatis-config.xml
+  # 指定mapper文件路径
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+
