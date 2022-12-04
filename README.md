@@ -19,6 +19,10 @@
 | [demo-jwt](demo-jwt/README.md)                                                 | SpringBoot 集成 JWT                      |
 | [demo-filter-interceptor-listener](demo-filter-interceptor-listener/README.md) | SpringBoot 拦截器、过滤器、监听器        |
 | [Spring-Boot-Log](Spring-Boot-Log/README.md)                                   | Spring-Boot 日志配置                     |
+| [spring-boot-error-contorller](spring-boot-error-contorller)                                   | Spring-Boot ErrorContorller   错误处理控制器 |
+| [spring-boot-exception-hanlder](spring-boot-exception-hanlder)                                   | Spring-Boot ExceptionHanlder   统一异常处理 |
+| [Spring-Boot-MyBaits-PageHelper](Spring-Boot-MyBaits-PageHelper)                                   | Spring-Boot 分页实现 |
+
 
 可参考的项目：
 
