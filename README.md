@@ -24,6 +24,7 @@
 | [SpringBoot-MyBaits-PageHelper](SpringBoot-MyBaits-PageHelper)                                   | Spring-Boot 分页实现 |
 | [SpringBoot-MyBatis-JPA](SpringBoot-MyBatis-JPA)                                   | Spring-Boot JPA |
 |[SpringBoot-ElasticSearch](SpringBoot-ElasticSearch)                                   | SpringBoot ElasticSearch |
+|[SpringBoot-EasyExcel](SpringBoot-EasyExcel/README.md)  | SpringBoot-EasyExcel |
 
 
 可参考的项目：
