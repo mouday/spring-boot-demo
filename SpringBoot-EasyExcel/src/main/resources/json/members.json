@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "username": "刘备",
+    "password": "123456",
+    "nickname": "刘玄德",
+    "birthday": "2000-10-10",
+    "phone": "1234567890",
+    "icon": "icon",
+    "gender": "1"
+  },
+  {
+    "id": 2,
+    "username": "关于",
+    "password": "234567",
+    "nickname": "关云长",
+    "birthday": "2000-10-10",
+    "phone": "1234567890",
+    "icon": "icon",
+    "gender": "1"
+  },
+  {
+    "id": 3,
+    "username": "用户名",
+    "password": "password",
+    "nickname": "昵称",
+    "birthday": "2000-10-10",
+    "phone": "1234567890",
+    "icon": "icon",
+    "gender": "0"
+  }
+]
