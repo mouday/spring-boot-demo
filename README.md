@@ -30,6 +30,7 @@
 | [SpringBoot-MyBatis-JPA](SpringBoot-MyBatis-JPA)                                   | Spring-Boot JPA |
 |[SpringBoot-ElasticSearch](SpringBoot-ElasticSearch)                                   | SpringBoot ElasticSearch |
 |[SpringBoot-EasyExcel](SpringBoot-EasyExcel/README.md)  | SpringBoot-EasyExcel |
+|[SpringBoot-Captcha](SpringBoot-Captcha/README.md)  | 图片验证码 |
 
 
 可参考的项目：
