@@ -31,6 +31,7 @@
 |[SpringBoot-ElasticSearch](SpringBoot-ElasticSearch)                                   | SpringBoot ElasticSearch |
 |[SpringBoot-EasyExcel](SpringBoot-EasyExcel/README.md)  | SpringBoot-EasyExcel |
 |[SpringBoot-Captcha](SpringBoot-Captcha/README.md)  | 图片验证码 |
+|[SpringBoot-JSON](SpringBoot-JSON/README.md)  | SpringBoot 返回 json 数据 |
 
 
 可参考的项目：
