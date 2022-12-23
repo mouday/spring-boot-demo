@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    <link rel="stylesheet" href="/static/css/upload.css">
+</head>
+<body>
+
+    <h2>文件上传和下载</h2>
+
+    <div>
+        <!--上传-->
+        <label class="button" id="file-input-btn">
+            <span>上传文件</span>
+            <input type="file" class="file-input">
+        </label>
+
+        <!--下载-->
+        <div class="button" id="file-download-btn">下载文件</div>
+    </div>
+
+    <!--预览-->
+    <img src="" alt="" id="image" class="image-preview">
+
+    <!-- 第三方依赖 -->
+    <script src="/static/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="/static/libs/file-saver/2.0.5/FileSaver.min.js"></script>
+
+    <!--业务代码-->
+    <script src="/static/js/upload.js"></script>
+
+</body>
+</html>

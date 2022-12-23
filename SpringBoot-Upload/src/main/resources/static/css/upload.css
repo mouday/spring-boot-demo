@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 按钮样式，来自element-ui */
+.button {
+    color: #fff;
+    background-color: #409eff;
+
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    transition: .1s;
+    font-weight: 500;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background: #66b1ff;
+    border-color: #66b1ff;
+    color: #fff;
+}
+
+/*上传input*/
+.file-input {
+    display: none;
+}
+
+/* 图片预览 */
+.image-preview {
+    margin-top: 20px;
+    width: 500px;
+    height: 300px;
+    object-fit: contain;
+    border: 1px solid #eeeeee;
+    display: none;
+}
