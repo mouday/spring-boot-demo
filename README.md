@@ -32,12 +32,14 @@
 |[SpringBoot-EasyExcel](SpringBoot-EasyExcel/README.md)  | SpringBoot-EasyExcel |
 |[SpringBoot-Captcha](SpringBoot-Captcha/README.md)  | 图片验证码 |
 |[SpringBoot-JSON](SpringBoot-JSON/README.md)  | SpringBoot 返回 json 数据 |
+|[SpringBoot-Upload](SpringBoot-Upload/README.md)  | SpringBoot 文件上传 |
 
 
 可参考的项目：
 
 - Spring 系列教程： https://github.com/wuyouzhuguli/SpringAll
 - Spring Boot 指南: https://snailclimb.gitee.io/springboot-guide/
+- https://github.com/LuoLiangDSGA/spring-learning
 
 本地预览
 
