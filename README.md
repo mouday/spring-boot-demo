@@ -33,6 +33,7 @@
 |[SpringBoot-Captcha](SpringBoot-Captcha/README.md)  | 图片验证码 |
 |[SpringBoot-JSON](SpringBoot-JSON/README.md)  | SpringBoot 返回 json 数据 |
 |[SpringBoot-Upload](SpringBoot-Upload/README.md)  | SpringBoot 文件上传 |
+|[SpringBoot-Async](SpringBoot-Async/README.md)  | SpringBoot 异步任务 |
 
 
 可参考的项目：
