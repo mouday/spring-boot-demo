@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="zh">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>SpringBoot整合示例</title>
-    <meta http-equiv="X-UA-Compatible"
-          content="IE=edge,chrome=1" />
-    <meta name="description"
-          content="Description">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet"
-          href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
-</head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="app"></div>
     <script>
-        window.$docsify = {
-            name: 'SpringBootDemo',
-            loadSidebar: true,
-            repo: 'mouday/Spring-Boot-Demo',
-            //搜索插件
-            search: {
-                placeholder: '搜索',
-                noData: '没有结果！',
-            },
-        }
+      window.$docsify = {
+        name: "SpringBootDemo",
+        loadSidebar: true,
+        repo: "mouday/Spring-Boot-Demo",
+        //搜索插件
+        search: {
+          placeholder: "搜索",
+          noData: "没有结果！",
+        },
+        // 解决本地缓存不更新问题
+        requestHeaders: {
+          "cache-control": "no-cache",
+        },
+      };
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
@@ -35,7 +40,5 @@
 
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-
-</body>
-
+  </body>
 </html>
