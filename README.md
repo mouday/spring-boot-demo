@@ -35,6 +35,7 @@ github:
 |[SpringBoot-Upload](SpringBoot-Upload/README.md)  | SpringBoot 文件上传 |
 |[SpringBoot-Async](SpringBoot-Async/README.md)  | SpringBoot 异步任务 |
 |[SpringBoot-Redis](SpringBoot-Redis/README.md)  | SpringBoot整合Redis缓存 |
+|[SpringBoot-Mongo](SpringBoot-Mongo/README.md)  | SpringBoot整合Mongo |
 
 
 可参考的项目：
