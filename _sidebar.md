@@ -10,5 +10,7 @@
 - [SpringBoot-Captcha](SpringBoot-Captcha/README.md)
 - [SpringBoot-JSON](SpringBoot-JSON/README.md)
 - [SpringBoot-Async](SpringBoot-Async/README.md)
+- [SpringBoot-Schedule](SpringBoot-Schedule/README.md)
 - [SpringBoot-Redis](SpringBoot-Redis/README.md)
 - [SpringBoot-Mongo](SpringBoot-Mongo/README.md)
+
