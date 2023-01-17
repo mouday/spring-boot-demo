@@ -49,3 +49,5 @@ public class ScheduleConfiguration {
 }
 
 ```
+> 可参考
+> [Spring Schedule 实现定时任务](https://snailclimb.gitee.io/springboot-guide/#/./docs/advanced/SpringBoot-ScheduleTasks)
