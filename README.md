@@ -37,6 +37,7 @@ github:
 |[SpringBoot-Schedule](SpringBoot-Schedule/README.md)  | SpringBoot 定时任务 |
 |[SpringBoot-Redis](SpringBoot-Redis/README.md)  | SpringBoot整合Redis缓存 |
 |[SpringBoot-Mongo](SpringBoot-Mongo/README.md)  | SpringBoot整合Mongo |
+|[SpringBoot-Profile](SpringBoot-Profile/README.md)  | SpringBoot多环境配置 |
 
 
 可参考的项目：
