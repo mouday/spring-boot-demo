@@ -4,8 +4,8 @@
 
 github:
 
-- 文档地址：[https://mouday.github.io/Spring-Boot-Demo](https://mouday.github.io/Spring-Boot-Demo)
-- 项目地址：[https://github.com/mouday/Spring-Boot-Demo](https://github.com/mouday/Spring-Boot-Demo)
+- 文档地址：[https://mouday.github.io/spring-boot-demo](https://mouday.github.io/spring-boot-demo)
+- 项目地址：[https://github.com/mouday/spring-boot-demo](https://github.com/mouday/spring-boot-demo)
 
 
 国内镜像
