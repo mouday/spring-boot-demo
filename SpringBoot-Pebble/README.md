@@ -4,7 +4,7 @@ Pebble模板引擎，和PHP中的Twig、Python中的Django/jinja2模板语法类
 
 文档
 - [https://pebbletemplates.io/](https://pebbletemplates.io/)
-- [Pebble Spring Boot Starter](https://pebbletemplates.io/wiki/guide/spring-boot-integration/)
+- [Spring Boot Integration Pebble](https://pebbletemplates.io/wiki/guide/spring-boot-integration/)
 - [https://github.com/PebbleTemplates/pebble](https://github.com/PebbleTemplates/pebble)
 - [https://mvnrepository.com/artifact/io.pebbletemplates/pebble-spring-boot-starter](https://mvnrepository.com/artifact/io.pebbletemplates/pebble-spring-boot-starter)
 
