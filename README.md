@@ -20,6 +20,7 @@ github:
 | [SpringBoot-HelloWorld](SpringBoot-HelloWorld/README.md)  | 用最少的代码运行起来一个 SpringBoot 项目 |
 | [SpringBoot-Freemarker](SpringBoot-Freemarker/README.md)  | SpringBoot 整合模板引擎 Freemarker |
 | [SpringBoot-Thymeleaf](SpringBoot-Thymeleaf/README.md)  | SpringBoot 整合模板引擎 Thymeleaf |
+| [SpringBoot-Pebble](SpringBoot-Pebble/README.md)  | SpringBoot 整合模板引擎 Pebble |
 | [SpringBoot-Mail](SpringBoot-Mail/README.md)    | SpringBoot 整合 Mail 发送邮件 |
 | [SpringBoot-Listener](SpringBoot-Listener/README.md) | 使用监听器打印出程序运行的地址和端口 |
 | [SpringBoot-JWT](SpringBoot-JWT/README.md) | SpringBoot 集成 JWT |
