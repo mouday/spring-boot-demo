@@ -31,6 +31,7 @@ github:
 | [SpringBoot-MyBaits-PageHelper](SpringBoot-MyBaits-PageHelper) | Spring-Boot 分页实现 |
 | [SpringBoot-MyBatis-JPA](SpringBoot-MyBatis-JPA/README.md)  | Spring-Boot JPA |
 | [SpringBoot-MyBatis-Plus](SpringBoot-MyBatis-Plus/README.md)  | SpringBoot MyBatis-Plus |
+| [SpringBoot-Sharding-JDBC](SpringBoot-Sharding-JDBC/README.md)  | 数据库读写分离 |
 |[SpringBoot-ElasticSearch](SpringBoot-ElasticSearch/README.md) | SpringBoot ElasticSearch |
 |[SpringBoot-EasyExcel](SpringBoot-EasyExcel/README.md)  | SpringBoot-EasyExcel |
 |[SpringBoot-Captcha](SpringBoot-Captcha/README.md)  | 图片验证码 |

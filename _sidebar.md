@@ -20,4 +20,5 @@
 - [SpringBoot-Cache](SpringBoot-Cache/README.md)
 - [SpringBoot-Websocket](SpringBoot-Websocket/README.md)
 - [SpringBoot-MyBatis-Plus](SpringBoot-MyBatis-Plus/README.md)
+- [SpringBoot-Sharding-JDBC](SpringBoot-Sharding-JDBC/README.md)
 
