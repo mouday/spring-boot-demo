@@ -30,6 +30,7 @@ github:
 | [SpringBoot-ExceptionHanlder](SpringBoot-ExceptionHanlder/README.md) | Spring-Boot ExceptionHanlder   统一异常处理 |
 | [SpringBoot-MyBaits-PageHelper](SpringBoot-MyBaits-PageHelper) | Spring-Boot 分页实现 |
 | [SpringBoot-MyBatis-JPA](SpringBoot-MyBatis-JPA/README.md)  | Spring-Boot JPA |
+| [SpringBoot-MyBatis-Plus](SpringBoot-MyBatis-Plus/README.md)  | SpringBoot MyBatis-Plus |
 |[SpringBoot-ElasticSearch](SpringBoot-ElasticSearch/README.md) | SpringBoot ElasticSearch |
 |[SpringBoot-EasyExcel](SpringBoot-EasyExcel/README.md)  | SpringBoot-EasyExcel |
 |[SpringBoot-Captcha](SpringBoot-Captcha/README.md)  | 图片验证码 |
