@@ -28,7 +28,7 @@ github:
 | [SpringBoot-Log](SpringBoot-Log/README.md)   | Spring-Boot 日志配置 |
 | [SpringBoot-ErrorContorller](SpringBoot-ErrorContorller/README.md) | Spring-Boot ErrorContorller   错误处理控制器 |
 | [SpringBoot-ExceptionHanlder](SpringBoot-ExceptionHanlder/README.md) | Spring-Boot ExceptionHanlder   统一异常处理 |
-| [SpringBoot-MyBaits-PageHelper](SpringBoot-MyBaits-PageHelper) | Spring-Boot 分页实现 |
+| [SpringBoot-MyBaits](SpringBoot-MyBaits) | Spring-Boot MyBaits |
 | [SpringBoot-MyBatis-JPA](SpringBoot-MyBatis-JPA/README.md)  | Spring-Boot JPA |
 | [SpringBoot-MyBatis-Plus](SpringBoot-MyBatis-Plus/README.md)  | SpringBoot MyBatis-Plus |
 | [SpringBoot-Sharding-JDBC](SpringBoot-Sharding-JDBC/README.md)  | 数据库读写分离 |
