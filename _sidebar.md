@@ -21,4 +21,5 @@
 - [SpringBoot-Websocket](SpringBoot-Websocket/README.md)
 - [SpringBoot-MyBatis-Plus](SpringBoot-MyBatis-Plus/README.md)
 - [SpringBoot-Sharding-JDBC](SpringBoot-Sharding-JDBC/README.md)
+- [SpringBoot-Knife4j-Swagger](SpringBoot-Knife4j-Swagger/README.md)
 
