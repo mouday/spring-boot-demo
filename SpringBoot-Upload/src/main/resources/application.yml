@@ -1,0 +1,5 @@
+spring:
+  file-storage:
+    domain: "http://127.0.0.1:8080"
+    base-path: "public/upload"
+    base-url: "/upload"

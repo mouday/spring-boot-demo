@@ -1,5 +1,7 @@
 package com.example.demo.utils;
 
+import java.util.UUID;
+
 /**
  * 字符串处理工具类
  */
@@ -16,5 +18,10 @@ public class StringUtil {
         }
 
         return filename.substring(filename.lastIndexOf("."));
+    }
+
+    public static String getRandomFilename(String suffixWithDot) {
+        // 使用uuid生成文件名，防止文件名重复造成文件覆盖
+        return UUID.randomUUID().toString() + suffixWithDot;
     }
 }

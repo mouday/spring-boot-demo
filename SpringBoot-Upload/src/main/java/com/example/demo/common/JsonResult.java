@@ -3,7 +3,7 @@ package com.example.demo.common;
 /**
  * 统一的返回
  */
-public class JsonResult {
+public class JsonResult<T> {
     /**
      * 业务状态码
      */
@@ -17,9 +17,9 @@ public class JsonResult {
     /**
      * 返回数据
      */
-    private Object data = null;
+    private T data = null;
 
-    public static JsonResult success(Object data) {
+    public static <T> JsonResult success(T data) {
         JsonResult jsonResult = new JsonResult();
         jsonResult.setData(data);
         return jsonResult;
@@ -45,7 +45,7 @@ public class JsonResult {
         return data;
     }
 
-    public void setData(Object data) {
+    public void setData(T data) {
         this.data = data;
     }
 }
