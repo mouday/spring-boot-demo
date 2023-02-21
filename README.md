@@ -46,6 +46,7 @@ github:
 |[SpringBoot-Cache](SpringBoot-Cache/README.md)  | SpringBoot缓存注解 |
 |[SpringBoot-Websocket](SpringBoot-Websocket/README.md)  | 实现服务端推送消息到客户端|
 |[SpringBoot-Knife4j-Swagger](SpringBoot-Knife4j-Swagger/README.md)  | 提供接口文档 |
+|[SpringBoot-Kafka](SpringBoot-Kafka/README.md)  | 实现数据异步处理 |
 
 
 可参考的项目：
