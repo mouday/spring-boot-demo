@@ -1,23 +1,37 @@
 package com.example.demo.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.util.Date;
+
+@Data
 public class User {
     private String name;
 
     private Integer age;
 
-    public String getName() {
-        return name;
-    }
+    // 忽略属性
+    @JsonIgnore
+    private String password;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    // 修改属性名
+    @JsonProperty("birthDay")
+    private Date birthday;
 
-    public Integer getAge() {
-        return age;
-    }
+    private LocalDateTime localDateTime;
 
-    public void setAge(Integer age) {
-        this.age = age;
-    }
+    private LocalDate localDate;
+
+    private LocalTime localTime;
+
+    // 格式化
+    @JsonFormat(pattern = "yyyy年MM月dd日")
+    private LocalDateTime localDateTimeFormat;
+
 }
