@@ -1,5 +1,8 @@
 ##  SpringBoot 返回 json 数据
 
+文章
+- [Java：SpringBoot返回json数据时间格式、命名风格、忽略字段返回](https://blog.csdn.net/mouday/article/details/129211311)
+
 依赖
 
 ```xml
