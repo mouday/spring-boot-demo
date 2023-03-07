@@ -25,4 +25,5 @@
 - [SpringBoot-Kafka](SpringBoot-Kafka/README.md)
 - [SpringBoot-Retry](SpringBoot-Retry/README.md)
 - [SpringBoot-Security](SpringBoot-Security/README.md)
+- [SpringBoot-Event](SpringBoot-Event/README.md)
 
