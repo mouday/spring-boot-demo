@@ -1,0 +1,21 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+###
+# 不提供认证信息
+GET http://localhost:8080/hello
+
+###
+# 提供错误的认证信息
+GET http://localhost:8080/hello
+Authorization: Basic dXNlcjo2YzVlMTUyOS1kMTc2LTRkYjItYmZlMy0zZTIzOTNlMjY2MTk=
+
+###
+# 提供正确的认证信息
+GET http://localhost:8080/hello
+Authorization: Basic emhhbmdzYW46emhhbmdzYW4=
+###

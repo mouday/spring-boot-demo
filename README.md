@@ -48,7 +48,8 @@ github:
 |[SpringBoot-Knife4j-Swagger](SpringBoot-Knife4j-Swagger/README.md)  | 提供接口文档 |
 |[SpringBoot-Kafka](SpringBoot-Kafka/README.md)  | 实现数据异步处理 |
 |[SpringBoot-Retry](SpringBoot-Retry/README.md)  | 实现错误重试 |
-|[SpringBoot-Security](SpringBoot-Security/README.md)  | 认证授权 |
+|[SpringBoot-Security](SpringBoot-Security/README.md)  | 认证授权jwt |
+|[SpringBoot-Security-Basic-Form](SpringBoot-Security-Basic-Form/README.md)  | 认证授权 Basic/Form |
 |[SpringBoot-Event](SpringBoot-Event/README.md)  | 事件监听和发布 |
 
 
