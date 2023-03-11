@@ -58,6 +58,8 @@ github:
 - Spring 系列教程： https://github.com/wuyouzhuguli/SpringAll
 - Spring Boot 指南: https://snailclimb.gitee.io/springboot-guide/
 - https://github.com/LuoLiangDSGA/spring-learning
+- [spring boot demo](https://github.com/xkcoding/spring-boot-demo) 一个用来深度学习并实战 spring boot 的项目
+
 
 本地预览
 
