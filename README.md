@@ -51,6 +51,7 @@ github:
 |[SpringBoot-Security](SpringBoot-Security/README.md)  | 认证授权jwt |
 |[SpringBoot-Security-Basic-Form](SpringBoot-Security-Basic-Form/README.md)  | 认证授权 Basic/Form |
 |[SpringBoot-Event](SpringBoot-Event/README.md)  | 事件监听和发布 |
+|[SpringBoot-Route](SpringBoot-Route/README.md)  | 获取路由映射 |
 
 
 可参考的项目：
