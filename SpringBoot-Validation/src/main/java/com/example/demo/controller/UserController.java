@@ -12,7 +12,8 @@ import com.example.demo.dto.UserDTO;
 @RestController
 public class UserController {
     @PostMapping("/save")
-    public JsonResult saveUser(@RequestBody @Validated UserDTO userDTO) {
+    public JsonResult saveUser(
+            @RequestBody @Validated UserDTO userDTO) {
         // 校验通过，才会执行业务逻辑处理
         System.out.println(userDTO);
 

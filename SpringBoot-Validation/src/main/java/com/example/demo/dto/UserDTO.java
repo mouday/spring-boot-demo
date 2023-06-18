@@ -1,5 +1,7 @@
 package com.example.demo.dto;
 
+
+import com.example.demo.validation.StatusValidation;
 import lombok.Data;
 import org.hibernate.validator.constraints.Length;
 
@@ -22,4 +24,7 @@ public class UserDTO {
     @NotNull
     @Length(min = 6, max = 20)
     private String password;
+
+    @StatusValidation(statusType = {"1", "2"})
+    private Integer status;
 }

@@ -1,0 +1,78 @@
+
+# 参数错误：account不能为null
+POST {{baseUrl}}/save
+content-type: application/json
+
+{
+  "name": "Tom"
+}
+
+###
+
+# 参数错误：password不能为null
+
+POST {{baseUrl}}/save
+content-type: application/json
+
+{
+  "userName": "Tom"
+}
+
+###
+# 参数错误：password长度需要在6和20之间
+POST {{baseUrl}}/save
+content-type: application/json
+
+{
+  "userName": "Tom",
+  "password": "11"
+}
+
+###
+# 参数错误：account不能为null
+POST {{baseUrl}}/save
+content-type: application/json
+
+{
+  "userName": "Tom",
+  "password": "1133344"
+}
+
+###
+# success
+POST {{baseUrl}}/save
+content-type: application/json
+
+{
+  "userName": "Tom",
+  "password": "1133344",
+  "account": "account"
+}
+
+###
+# 参数错误：status状态值错误
+POST {{baseUrl}}/save
+content-type: application/json
+
+{
+  "userName": "Tom",
+  "password": "1133344",
+  "account": "account",
+  "status": 0
+}
+
+###
+
+###
+# success
+POST {{baseUrl}}/save
+content-type: application/json
+
+{
+  "userName": "Tom",
+  "password": "1133344",
+  "account": "account",
+  "status": 1
+}
+
+###

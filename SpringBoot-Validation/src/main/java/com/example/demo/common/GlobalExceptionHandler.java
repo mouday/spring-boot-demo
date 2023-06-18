@@ -10,12 +10,13 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import javax.validation.ConstraintViolationException;
+import java.util.Arrays;
 
 /**
  * 全局异常处理
  */
 @RestControllerAdvice
-public class CommonExceptionHandler {
+public class GlobalExceptionHandler {
 
     /**
      * 参数校验失败
@@ -27,19 +28,13 @@ public class CommonExceptionHandler {
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     public JsonResult handleMethodArgumentNotValidException(MethodArgumentNotValidException ex) {
-        BindingResult bindingResult = ex.getBindingResult();
+        FieldError fieldError = ex.getBindingResult()
+                .getFieldErrors()
+                .get(0);
 
-        StringBuilder sb = new StringBuilder("校验失败:");
+        String msg = fieldError.getField() + fieldError.getDefaultMessage();
 
-        for (FieldError fieldError : bindingResult.getFieldErrors()) {
-            sb.append(fieldError.getField())
-                    .append("：")
-                    .append(fieldError.getDefaultMessage())
-                    .append(", ");
-        }
-        
-        String msg = sb.toString();
-        return JsonResult.error("参数校验失败" + msg);
+        return JsonResult.error("参数错误：" + msg);
     }
 
     /**
