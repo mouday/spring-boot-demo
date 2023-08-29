@@ -1,9 +1,5 @@
-# SpringBoot Start
+# SpringBoot-Secret
 
-启动模板
+使用AES对数据加密和解密
 
-已整合
-
-- lombok
-- mybatis-plus
-- mysql
+文章：[Java：SpringBoot使用AES对JSON数据加密和解密](https://pengshiyu.blog.csdn.net/article/details/132560838)
