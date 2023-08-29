@@ -53,6 +53,7 @@ github:
 |[SpringBoot-Event](SpringBoot-Event/README.md)  | 事件监听和发布 |
 |[SpringBoot-Route](SpringBoot-Route/README.md)  | 获取路由映射 |
 |[SpringBoot-Bcrypt](SpringBoot-Bcrypt/README.md)  | 使用bcrypt对密码加密和验证 |
+|[SpringBoot-Secret](SpringBoot-Secret/README.md)  | 使用AES对数据加密和解密 |
 
 
 可参考的项目：
