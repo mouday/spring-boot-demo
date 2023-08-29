@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    # 取pom.xml当中profile当中配置的profile.active标签
+    active: @profile.active@
+
+app:
+  name: default

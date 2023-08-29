@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>接口数据加密解密</title>
+  </head>
+  <body>
+    <!-- 引入依赖 -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script> -->
+    <script src="/static/crypto-js.min.js"></script>
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/axios/1.3.6/axios.min.js"></script> -->
+    <script src="/static/axios.min.js"></script>
+
+    <h1>查看控制台</h1>
+    
+    <!-- 加密解密模块 -->
+    <script type="text/javascript">
+      const SECRET_KEY = "1234567890123456";
+
+      /**
+       * 加密方法
+       * @param data 待加密数据
+       * @returns {string|*}
+       */
+      function encrypt(data) {
+        let key = CryptoJS.enc.Utf8.parse(SECRET_KEY);
+
+        if (typeof data === "object") {
+          data = JSON.stringify(data);
+        }
+        let plainText = CryptoJS.enc.Utf8.parse(data);
+
+        let secretText = CryptoJS.AES.encrypt(plainText, key, {
+          mode: CryptoJS.mode.ECB,
+          padding: CryptoJS.pad.Pkcs7
+        }).toString();
+
+        return secretText;
+      }
+
+      /**
+       * 解密数据
+       * @param data 待解密数据
+       */
+      function decrypt(data) {
+        let key = CryptoJS.enc.Utf8.parse(SECRET_KEY);
+
+        let result = CryptoJS.AES.decrypt(data, key, {
+          mode: CryptoJS.mode.ECB,
+          padding: CryptoJS.pad.Pkcs7
+        }).toString(CryptoJS.enc.Utf8);
+
+        return JSON.parse(result);
+      }
+    </script>
+
+    <!-- http请求模块 -->
+    <script type="text/javascript">
+      // 获取加密数据并解密
+      axios.get("http://127.0.0.1:8080/user/getUser").then((res) => {
+        console.log("接收到api返回加密数据：");
+        console.log(decrypt(res.data.encryptData));
+      });
+
+      // 提交加密参数
+      const data = {
+        name: "Tom",
+        age: "18",
+      };
+
+      axios
+        .post("http://127.0.0.1:8080/user/addUser", {
+          encryptData: encrypt(data),
+        })
+        .then((res) => {
+          console.log("接收到api返回未加密数据：");
+          console.log(res.data);
+        });
+    </script>
+  </body>
+</html>
