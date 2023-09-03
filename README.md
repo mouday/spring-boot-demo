@@ -55,6 +55,7 @@ github:
 |[SpringBoot-Bcrypt](SpringBoot-Bcrypt/README.md)  | 使用bcrypt对密码加密和验证 |
 |[SpringBoot-Secret](SpringBoot-Secret/README.md)  | 使用AES对数据加密和解密 |
 |[SpringBoot-SSE](SpringBoot-SSE/README.md)  | 使用Server-Sent Events向前端推送数据 |
+|[SpringBoot-Enum](SpringBoot-Enum/README.md)  | 配合MyBatis-Plus使用枚举类 |
 
 
 可参考的项目：
