@@ -20,7 +20,7 @@ import java.util.Map;
  * https://www.cnblogs.com/54chensongxia/archive/2020/11/20/14007696.html
  * https://blog.csdn.net/qq_38571892/article/details/123395165
  */
-@Controller
+//@Controller
 @RequestMapping("${server.error.path:${error.path:/error}}")
 public class CustomErrorController extends BasicErrorController {
 
