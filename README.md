@@ -57,6 +57,7 @@ github:
 |[SpringBoot-SSE](SpringBoot-SSE/README.md)  | 使用Server-Sent Events向前端推送数据 |
 |[SpringBoot-Enum](SpringBoot-Enum/README.md)  | 配合MyBatis-Plus使用枚举类 |
 |[SpringBoot-Batch](SpringBoot-Batch/README.md)  | 整合Spring-Batch |
+|[SpringBoot-Starter](SpringBoot-Starter/README.md)  | 自定义SpringBoot-Starter |
 
 
 可参考的项目：
