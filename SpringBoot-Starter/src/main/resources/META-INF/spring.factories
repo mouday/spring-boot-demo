@@ -1,0 +1,2 @@
+# 提醒SpringBoot在启动时，自动装配ReadingConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.example.demo.ReadingConfiguration
