@@ -1,9 +1,5 @@
-# SpringBoot Start
+# SpringBoot-Starter
 
-启动模板
+文章
 
-已整合
-
-- lombok
-- mybatis-plus
-- mysql
+https://blog.csdn.net/mouday/article/details/133906712
