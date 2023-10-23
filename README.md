@@ -58,6 +58,7 @@ github:
 |[SpringBoot-Enum](SpringBoot-Enum/README.md)  | 配合MyBatis-Plus使用枚举类 |
 |[SpringBoot-Batch](SpringBoot-Batch/README.md)  | 整合Spring-Batch |
 |[SpringBoot-Starter](SpringBoot-Starter/README.md)  | 自定义SpringBoot-Starter |
+|[SpringBoot-JDBC](SpringBoot-JDBC/README.md)  | 整合Spring SpringBoot-JDBC |
 
 
 可参考的项目：
