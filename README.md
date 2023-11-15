@@ -59,6 +59,7 @@ github:
 |[SpringBoot-Batch](SpringBoot-Batch/README.md)  | 整合Spring-Batch |
 |[SpringBoot-Starter](SpringBoot-Starter/README.md)  | 自定义SpringBoot-Starter |
 |[SpringBoot-JDBC](SpringBoot-JDBC/README.md)  | 整合Spring SpringBoot-JDBC |
+|[SpringBoot-Minio](SpringBoot-Minio/README.md)  | 整合Spring SpringBoot-Minio |
 
 
 可参考的项目：

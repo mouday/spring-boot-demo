@@ -1,0 +1,14 @@
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  #minio配置
+  minio:
+    access-key: ROOTUSER      #key就是docker初始化是设置的，密钥相同
+    secret-key: CHANGEME123
+    url: http://localhost:9000
+    bucket-name: wdhcr
+  thymeleaf:
+    cache: false
