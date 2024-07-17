@@ -1,0 +1,66 @@
+logging:
+  # 定义分组，多个包名逗号分隔
+  group:
+    controller: com.demo.controller
+  # 设置分组日志级别
+  level:
+    controller: debug
+  pattern:
+    console: "%d %clr(%5p) -- [%16t] %clr(%-40.40c){cyan} : %m %n"
+  file:
+    name: "server.log"
+  logback:
+    rollingpolicy:
+      max-file-size: 4KB
+      file-name-pattern: ${LOG_FILE}%d{yyyy-MM-dd}.%i.log
+
+# 配置数据库信息
+spring:
+  profiles:
+    active: @profile.active@
+
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/data
+      username: root
+      password: 123456
+  devtools:
+    restart:
+      exclude: /static/**,/public/**
+      enabled: true
+
+mybatis-plus:
+  configuration:
+    # 开启SQL语句打印
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      # 数据库ID自增
+      id-type: AUTO
+
+---
+# 生产环境
+spring:
+  config:
+    activate:
+      on-profile: pro
+
+server:
+  port: 8080
+
+---
+# 开发环境
+spring:
+  profiles: dev
+
+server:
+  port: 8081
+
+---
+# 测试环境
+spring:
+  profiles: test
+
+server:
+  port: 8082

@@ -1,0 +1,21 @@
+# 修改服务器端口
+server:
+  port: 8080
+
+# 配置数据库信息
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/data
+      username: root
+      password: 123456
+
+mybatis-plus:
+  configuration:
+    # 开启SQL语句打印
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      # 数据库ID自增
+      id-type: AUTO
